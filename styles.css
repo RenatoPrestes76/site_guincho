@@ -11,7 +11,7 @@ body{
   margin: auto;
 }
 main{
-  background-color: rgb(252, 94, 3);
+  background-color: #464646;
 }
 header{
   display: flex;
@@ -22,8 +22,10 @@ header{
 }
 .nav-bar{
   display: flex;
+  align-items: center;
   width: 100%;
   height: 15vh;
+  margin-left: 2%;
 }
 .nav-list{
   display: flex;
@@ -57,56 +59,42 @@ section{
   flex-direction: column;
   align-items: center;
 }
-
-.logo {
+.text-logo{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin: auto;
-    background-color: rgb(65, 4, 123);
-  }
-.text-logo{
-    display: flex;
-
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    width: 100%;
+    height: 5vh;
     margin-top: 0.5rem;
     background-color: rgb(252, 94, 3);
     color: white;
 }
-.logo-img{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin: auto;
-    height: 25vh;
-}
 .img{
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
     width: 100%;
-    height: 65vh;
-    background-color: rgb(65, 4, 123);
+    height: 80vh;
+    background-image: url(./img/prancha.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     margin: auto;
 }
-.img .img-gt{
-  width: 100%;
-  margin: auto;
+.text-prancha{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: right;
+  margin-right: 5%;
+  margin-top: 2%;
+  color: white;
 }
-.img .apoio{
-  width: 100%;
-  margin: auto;
-}
-.logo {
-  font-size: 1.5rem;
+.logo-png{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
 }
 #sobre {
     display: flex;
@@ -161,7 +149,7 @@ section{
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 40vh;
+  height: 60vh;
   padding: 50px;
 }
 .apoio-img{
@@ -169,7 +157,7 @@ section{
   align-items: flex-end;
   justify-content: flex-end;
   width: 50%;
-  height: 40vh;
+  height: 60vh;
 }
 .text-apoio{
   display: flex;
@@ -177,12 +165,12 @@ section{
   align-items: flex-start;
   justify-content: flex-start;
   width: 50%;
-  height: 40vh;
-  background-color: red;
+  height: 60vh;
+  background-color: #22024b;
 }
 .text-apoio p{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 50px;
@@ -194,21 +182,22 @@ section{
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 40vh;
+  height: 60vh;
   padding: 50px;
 }
 .text-hf{
   display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  height: 40vh;
-  background-color: #ff4800;
+  height: 60vh;
+  padding: 50px;
+  background-color: #22024b;
 }
 .text-hf p{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 50px;
@@ -220,7 +209,7 @@ section{
   align-items: center;
   justify-content: flex-start;
   width: 50%;
-  height: 40vh;
+  height: 60vh;
 }
 .whatsapp {
     display: flex;
@@ -303,30 +292,25 @@ Footer{
   align-items: center;
   justify-content: center;
   width: 100%;
-<<<<<<< HEAD
   background-color: #dbdada;
-=======
-  height: 1vh;
-  background-color: #acacac;
->>>>>>> develop
   margin-top: 0.5rem;
   padding: 50px;
 }
-  @media  screen and (max-width: 825px) {
-    .nav-bar, .nav-list ul li{
-      align-items: flex-start;
-      justify-content: flex-start;
-      width: 100%;
-      height: 100%;
-      background-color: #464646;
-    }
+@media  screen and (max-width: 825px) {
+  .nav-bar, .nav-list ul li{
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    background-color: #464646;
   }
+}
 @media  screen and (max-width: 750px) {
   .logo{
     width: 100%;
     height: 100%;
   }
-  .logo, .img{
+  .logo{
     flex-direction: column;
     align-items: center;
     width: 100%;
@@ -433,14 +417,16 @@ Footer{
   }
 }
 @media  screen and (max-width: 400px){
-<<<<<<< HEAD
+  .img{
+    display: flex;
+    width: 100%;
+    height: 50vh;
+  }
   #cuidados{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    width: 100%;
-    height: 100%;
     font-size: 10px;
     padding: 2px;
   }
@@ -457,22 +443,3 @@ Footer{
     padding: 5px;
   }
 }
-=======
-  #contatos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    padding: 3px;
-  }
-  #cuidados{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    padding: 2px;
-    font-size: 12px;
-  }
-}
->>>>>>> develop
