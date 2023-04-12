@@ -32,12 +32,25 @@ header{
   justify-content: center;
   width: 100%;
 }
-.nav-list, ul li{
-  float: left;
-  text-align: inherit;
+.nav-list ul{
+  float: right;
+  margin-right: 20px;
 }
-.nav-list a{
+.nav-list, ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+.nav-list ul li a{
   color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active, a:hover{
+  background-color: #f38d07;
+  transition: 0.5s;
 }
 section{
   display: flex;
@@ -290,26 +303,25 @@ Footer{
   align-items: center;
   justify-content: center;
   width: 100%;
+<<<<<<< HEAD
   background-color: #dbdada;
+=======
+  height: 1vh;
+  background-color: #acacac;
+>>>>>>> develop
   margin-top: 0.5rem;
   padding: 50px;
 }
+  @media  screen and (max-width: 825px) {
+    .nav-bar, .nav-list ul li{
+      align-items: flex-start;
+      justify-content: flex-start;
+      width: 100%;
+      height: 100%;
+      background-color: #464646;
+    }
+  }
 @media  screen and (max-width: 750px) {
-  .nav-bar{
-    width: 100%;
-    height: 100%;
-  }
-  .nav-bar, .nav-list{
-    width: 100%;
-    height: 100%;
-  }
-  .nav-list, ul li{
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-  }
   .logo{
     width: 100%;
     height: 100%;
@@ -387,6 +399,7 @@ Footer{
     padding: 3px;
   }
   #parceiros, .portifolio, .portifolio1, .portifolio2{
+    display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
@@ -420,6 +433,7 @@ Footer{
   }
 }
 @media  screen and (max-width: 400px){
+<<<<<<< HEAD
   #cuidados{
     display: flex;
     flex-direction: column;
@@ -443,3 +457,22 @@ Footer{
     padding: 5px;
   }
 }
+=======
+  #contatos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 3px;
+  }
+  #cuidados{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 2px;
+    font-size: 12px;
+  }
+}
+>>>>>>> develop
