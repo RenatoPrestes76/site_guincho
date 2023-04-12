@@ -142,6 +142,7 @@ section{
   border-radius: 10px;
   margin-top: 0.5rem;
   background-color: white;
+  padding: 50px;
 }
 .apoio{
   display: flex;
@@ -236,6 +237,7 @@ section{
   border-radius: 10px;
   gap: 5rem;
   margin-top: 0.5rem;
+  padding: 50px;
 }
 .portifolio{
   display: flex;
@@ -251,22 +253,15 @@ section{
  display: flex;
  margin: 0%;
 }
-
 #cuidados{
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-end;
-  width: 98%;
-  height: 100vh;
-  border-radius: 10px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
   background-color: white;
-  color: black;
+  border-radius: 10px;
+  width: 98%;
   margin-top: 0.5rem;
-}
-.text-cuidados{
-  width: 100%;
-  height: 100%;
   padding: 50px;
 }
 #iframe-videos {
@@ -279,6 +274,7 @@ section{
   border-radius: 10px;
   margin-top: 0.5rem;
   background-color: white;
+  padding: 50px;
 }
 .video{
   display: flex;
@@ -288,16 +284,14 @@ section{
   width: 100%;
   padding: 50px;
 }
-
 Footer{
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   width: 100%;
-  background-color: #acacac;
+  background-color: #dbdada;
   margin-top: 0.5rem;
-  border-radius: 10px;
   padding: 50px;
 }
 @media  screen and (max-width: 750px) {
@@ -340,8 +334,12 @@ Footer{
     padding: 0.5px;
   }
   #contatos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    height: 100%;
+    height:100%;
   }
   #contatos, .contatos{
     flex-direction: column;
@@ -349,10 +347,12 @@ Footer{
     justify-content: center;
     width: 100%;
     height: 100%;
+    padding: 3px;
   }
   .merchan{
     width: 100%;
     height: 100%;
+    padding: 5px;
   }
   .merchan, .apoio{
     flex-direction: column;
@@ -375,6 +375,7 @@ Footer{
   .apoio, .text-apoio{
     width: 100%;
     height: 100%;
+    padding: 3px;
   }
   .hf, .hf-img{
     width: 100%;
@@ -383,15 +384,26 @@ Footer{
   .hf, .text-hf{
     width: 100%;
     height: 100%;
+    padding: 3px;
   }
   #parceiros, .portifolio, .portifolio1, .portifolio2{
     flex-direction: column;
+    align-items: center;
     width: 100%;
     height: 100%;
   }
   #cuidados{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
     width: 100%;
     height: 100%;
+    padding: 2px;
+  }
+  .text-manut{
+    flex-direction: column;
+    align-items: flex-start;
   }
   #iframe-videos{
     width: 100%;
@@ -404,5 +416,30 @@ Footer{
   .footer{
     width: 100%;
     height: 100%;
+    padding: 50px;
+  }
+}
+@media  screen and (max-width: 400px){
+  #cuidados{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    font-size: 10px;
+    padding: 2px;
+  }
+  .text-manut{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #iframe-videos, .videos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
   }
 }
